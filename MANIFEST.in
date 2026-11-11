@@ -1,0 +1,13 @@
+include README.md LICENSE pyproject.toml .python-version
+recursive-include main *.md *.py
+include docs/WORKBOOK_FORMAT.md
+recursive-include environment *.md *.ps1 *.txt
+recursive-include tests *.py *.md
+include scripts/make_demo_workbook.py
+exclude tests/integration/test_local_sources.py
+prune data
+prune docs/source
+prune outputs
+prune tmp
+prune .venv
+global-exclude __pycache__ *.py[cod]

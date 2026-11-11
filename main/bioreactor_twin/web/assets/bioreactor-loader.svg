@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <style>
+    .rotor{transform-origin:40px 52px;animation:spin 1.15s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @media(prefers-reduced-motion:reduce){.rotor{animation:none}}
+  </style>
+  <rect x="7" y="7" width="66" height="66" rx="17" fill="#eaf4ff"/>
+  <path d="M23 26h34v30c0 8-7 12-17 12s-17-4-17-12z" fill="#bce9e4"/>
+  <path d="M23 26h34v30c0 8-7 12-17 12s-17-4-17-12zM19 26h42M33 18h14M40 18v34" fill="none" stroke="#17538a" stroke-width="2.4" stroke-linecap="round"/>
+  <g class="rotor" fill="#15928a">
+    <path d="M40 52c-3-7-10-8-12-3-1 3 3 6 12 3M40 52c7-3 8-10 3-12-3-1-6 3-3 12M40 52c3 7 10 8 12 3 1-3-3-6-12-3M40 52c-7 3-8 10-3 12 3 1 6-3 3-12"/>
+    <circle cx="40" cy="52" r="3" fill="#17538a"/>
+  </g>
+</svg>

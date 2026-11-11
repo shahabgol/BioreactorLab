@@ -1,0 +1,55 @@
+# Local environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.env
+.env.*
+!.env.example
+tmp/
+/.chart-data-*/
+
+# Study configuration, provenance, and internal analyses.
+/configs/development.yaml
+/configs/*.local.yaml
+/data/source_manifest.json
+/docs/*.md
+!/docs/WORKBOOK_FORMAT.md
+/tests/integration/test_local_sources.py
+
+# Confidential inputs and generated model/data artifacts, wherever saved.
+*.xlsx
+*.xlsm
+*.xls
+*.pdf
+*.pptx
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.joblib
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.h5
+*.parquet
+
+# Original assignment and experimental data remain local.
+/data/raw/*
+!/data/raw/.gitkeep
+/docs/source/*
+!/docs/source/.gitkeep
+/data/interim/*
+!/data/interim/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+/outputs/*
+!/outputs/.gitkeep
